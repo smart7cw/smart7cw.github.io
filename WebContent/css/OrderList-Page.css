@@ -1,0 +1,96 @@
+@charset "UTF-8";
+
+* {											/* 전체 초기화 */
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family :'GowunDodum-Regular';
+	
+}
+
+@font-face {									/* 폰트 설정 (회의후 변경예정) */
+    font-family: 'GowunDodum-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/GowunDodum-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'GowunBatang-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/GowunBatang-Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* -------------------------------------- */
+
+
+
+a {
+	text-decoration: none;
+} 	
+
+
+/* 주문 목록 부분 css */
+.order-order-h3 {
+	height: 60px;
+	font-size: 23px;
+	font-weight: 400;
+	line-height: 80px;
+	margin-block-start: 1em;
+	margin-block-end: 1em;
+	margin-inline-start: 0px;
+	margin-inline-end: 0px;
+	margin-left: 9%;
+	
+	width: 150px;
+	text-align: center;
+	font-weight: bold;
+}
+
+.order {
+	text-align: right;
+}
+
+
+/* 테이블 css */
+.order-order_tb {
+	padding: 12px 0;
+	border: solid #e6e6e6;
+	border-width: 1px 0;
+	font-size: 14px;
+	font-weight: 400;
+	vertical-align: middle;
+		/* 	넓이  */
+	width: 80%;
+	/* 	표의 테두리와 셀의 테두리 사이의 간격 설정 : 간격 없음 겹치는 부분을 한 줄로 나타냄 */
+	border-collapse: collapse;
+	/*  border-spacing은 border-collapse의 값이 separate일 때만 적용됩니다. */
+	border-spacing: 0;
+	/* 	 테이블 고정  : 셀안의 데이터가 길어서 지정한 너비 이상으로 셀을 밀어버리는 것을 방지 */
+	table-layout: fixed;
+	margin: auto;
+}
+
+.order-tab-center {
+	text-align: center;
+	padding: 10px;
+}
+
+.order-table-body {
+	text-align: center;
+	
+}
+
+.order-order_tb td {
+	padding: 13px 0;
+	border-bottom: 1px solid #e6e6e6;
+	font-size: 15px;
+	font-weight: 400;
+	vertical-align: middle;
+}
+
+.order-paging{
+	margin: auto;
+	margin-bottom: 14.5%;
+}
+
